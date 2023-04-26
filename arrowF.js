@@ -83,12 +83,12 @@
 
 //pengulangan function, function expression dan arrow function
 
-function caraMasakSayur(bayem, bumbu) {
-  const panci = `didalam panci ada ${bayem} iket bayem dicampur ${bumbu}kg bumbu`;
-  return panci;
-}
-const sayurBayemAsin = caraMasakSayur(1, 3);
-console.log(sayurBayemAsin);
+// function caraMasakSayur(bayem, bumbu) {
+//   const panci = `didalam panci ada ${bayem} iket bayem dicampur ${bumbu}kg bumbu`;
+//   return panci;
+// }
+// const sayurBayemAsin = caraMasakSayur(1, 3);
+// console.log(sayurBayemAsin);
 
 // function peternakan(babi, kambing) {
 //   const kandang = `disini ada 2 ${babi} dan 3 ${kambing}`;
@@ -120,14 +120,29 @@ console.log(sayurBayemAsin);
 // const revoke = tokoSempak(12, 50);
 // console.log(revoke);
 
+// >>>>>>>>>>>FUNCTION EXPRESSION<<<<<<<<<<<<
+
 const calcAge1 = function (umur1) {
   return 50 - umur1;
 };
 const revokecalcAge = calcAge1(5);
 console.log(revokecalcAge);
 
-const umur = function (disiniparameter) {
-  return 20 - disiniparameter;
-};
-const revokeUmur = umur(10);
-console.log(revokeUmur);
+// const umur = function (disiniparameter) {
+//   return 20 - disiniparameter;
+// };
+// const revokeUmur = umur(10);
+// console.log(revokeUmur);
+
+// WELCOME TO FUNCTON TO FUNCTION
+function blenderPisauKecil(wadahJus) {
+  return wadahJus * 2;
+}
+
+function blender(apel, berries) {
+  const potonganapel = blenderPisauKecil(apel);
+  const potonganberries = blenderPisauKecil(berries);
+  const jus = `${potonganapel} biji dan ${potonganberries} biji `;
+  return jus;
+}
+console.log(blender(2, 3));
