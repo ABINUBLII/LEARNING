@@ -72,7 +72,7 @@
 //   return `${firstName} pensiun dalam ${retirement} tahun`;
 // };
 // console.log(yearsTillRetirement(1991, `abi`));
-x;
+
 // const pensiunKapan = (lahir, namamu) => {
 //   const umur = 2023 - lahir;
 //   const pensiun = 55 - umur;
@@ -89,3 +89,45 @@ function caraMasakSayur(bayem, bumbu) {
 }
 const sayurBayemAsin = caraMasakSayur(1, 3);
 console.log(sayurBayemAsin);
+
+// function peternakan(babi, kambing) {
+//   const kandang = `disini ada 2 ${babi} dan 3 ${kambing}`;
+//   return kandang;
+// }
+// const peternakanAbi = peternakan(10, 22);
+// console.log(peternakanAbi);
+
+// function isiKantorPEC(unitPEC) {
+//   const siapaAja = `ada ${unitPEC} orang di unit PEC.`;
+//   return siapaAja;
+// }
+// const mauBerapaAngkanya = isiKantorPEC(10);
+// console.log(mauBerapaAngkanya);
+
+// function bengkelMobil(mersi, toyotod, kigrung) {
+//   const running01 = `ada ${mersi} mersi, ${toyotod} toyota, ${kigrung} kijang`;
+//   return running01;
+// }
+// const bengkelMobilGue = bengkelMobil(20, 30, 60);
+// console.log(bengkelMobilGue);
+// const bengkelMobilKe2 = bengkelMobil(1, 5, 9);
+// console.log(bengkelMobilKe2);
+
+// function tokoSempak(vs, krokodile) {
+//   const runningTs = `ada sempak VS sebanyak ${vs} dan sempak krokodile sebanyak ${krokodile}`;
+//   return runningTs;
+// }
+// const revoke = tokoSempak(12, 50);
+// console.log(revoke);
+
+const calcAge1 = function (umur1) {
+  return 50 - umur1;
+};
+const revokecalcAge = calcAge1(5);
+console.log(revokecalcAge);
+
+const umur = function (disiniparameter) {
+  return 20 - disiniparameter;
+};
+const revokeUmur = umur(10);
+console.log(revokeUmur);
