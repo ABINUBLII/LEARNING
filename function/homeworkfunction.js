@@ -19,32 +19,32 @@
 
 //this is data 1
 
-// const calcAverage = (a, b, c) => (a + b + c) / 3;
+const calcAverage = (a, b, c) => (a + b + c) / 3;
 
-// let avgDolphins = calcAverage(44, 23, 71);
-// let avgKoalas = calcAverage(65, 54, 49);
+let avgDolphins = calcAverage(44, 23, 71);
+let avgKoalas = calcAverage(65, 54, 49);
 
-// function checkWinner(avgDolphins, avgKoalas) {
-//   console.log(avgDolphins, avgKoalas);
+function checkWinner(avgDolphins, avgKoalas) {
+  console.log(avgDolphins, avgKoalas);
 
-//   if (avgDolphins >= 2 * avgKoalas) {
-//     return `dolphins wins the thropy`;
-//   } else if (avgKoalas >= 2 * avgDolphins) {
-//     return `koalas wins the throphy`;
-//   } else {
-//     return `none`;
-//   }
-// }
+  if (avgDolphins >= 2 * avgKoalas) {
+    return `dolphins wins the thropy`;
+  } else if (avgKoalas >= 2 * avgDolphins) {
+    return `koalas wins the throphy`;
+  } else {
+    return `none`;
+  }
+}
 
-// checkWinner(avgDolphins, avgKoalas);
-// console.log(checkWinner(avgDolphins, avgKoalas));
+checkWinner(avgDolphins, avgKoalas);
+console.log(checkWinner(avgDolphins, avgKoalas));
 
 //this is data 2
 
 const calcAverage2 = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
 let skorDolphins2 = calcAverage2(85, 54, 41);
-let skorKoalas2 = calcAverage2(500, 1000, 200);
+let skorKoalas2 = calcAverage2(500, 60, 60);
 
 function winnerCheck(skorDolphins2, skorKoalas2) {
   if (skorDolphins2 >= 2 * skorKoalas2) {
