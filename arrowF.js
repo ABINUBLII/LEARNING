@@ -197,18 +197,89 @@
 // const theMachineOfArrawFunction = judul(20);
 // console.log(theMachineOfArrawFunction);
 
-const calcAverage = (a, b, c) => (a + b + c) / 3;
-const skorDolphins = calcAverage(44, 23, 71);
-const skorKoalas = calcAverage(65, 54);
+// const calcAverage = (a, b, c) => (a + b + c) / 3;
+// const skorDolphins = calcAverage(44, 23, 71);
+// const skorKoalas = calcAverage(65, 54);
 
-const checkWinner = function (avgDolhins, avgKoalas) {
-  if (avgDolhins >= 2 * avgKoalas) {
-    console.log(`dolphin menang (${skorDolphins} vs. ${skorKoalas})`);
-  } else if (avgKoalas >= 2 * avgDolhins) {
-    console.log(`koalas menang dengan skor ${skorDolphins} .vs. ${skorKoalas} `);
-  } else {
-    console.log(`no teams win`);
-  }
-};
-checkWinner(skorDolphins, skorKoalas);
-checkWinner(2, 19);
+// const checkWinner = function (avgDolhins, avgKoalas) {
+//   if (avgDolhins >= 2 * avgKoalas) {
+//     console.log(`dolphin menang (${skorDolphins} vs. ${skorKoalas})`);
+//   } else if (avgKoalas >= 2 * avgDolhins) {
+//     console.log(`koalas menang dengan skor ${skorDolphins} .vs. ${skorKoalas} `);
+//   } else {
+//     console.log(`no teams win`);
+//   }
+// };
+// checkWinner(skorDolphins, skorKoalas);
+// checkWinner(2, 19);
+
+//  >>>>>>> HOME WORK <<<<<<<<<<
+// Your tasks:
+// 1. Create an arrow function 'calcAverage' to calculate the average of 3 scores
+// 2. Use the function to calculate the average for both teams
+// 3. Create a function 'checkWinner' that takes the average score of each team
+// as parameters ('avgDolhins' and 'avgKoalas'), and then logs the winner
+// to the console, together with the victory points, according to the rule above.
+// Example: "Koalas win (30 vs. 13)"
+// 4. Use the 'checkWinner' function to determine the winner for both Data 1 and
+// Data 2
+// 5. Ignore draws
+
+// Test data:
+// § Data 1: Dolphins score 44, 23 and 71. Koalas score 65, 54 and 49
+// § Data 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27
+// Hints:
+// § To calculate average of 3 values, add them all together and divide by 3
+// § To check if number A is at least double number B, check for A >= 2 * B.
+// Apply this to the team's average scores 😉
+
+// const judul = (iniParameter) => 10 + iniParameter;
+// const theMachineOfArrawFunction = judul(20);
+// console.log(theMachineOfArrawFunction);
+
+//>>>>>ANSWER!<<<<<<
+// const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+// const winnerCheck = function (averageDolph, averageKoals) {
+//   if (averageDolph >= 2 * averageKoals) {
+//     console.log(`dolphine menang dengan score ${averageDolph}`);
+//   } else if (averageDolph >= 2 * averageKoals) {
+//     console.log(`koalas menang dengan score ${averageKoals}`);
+//   } else {
+//     console.log(`draw!`);
+//   }
+// };
+
+// const revokeThisScoreOfDolphines = winnerCheck(44, 23, 71);
+// // const revokeThisScoreOfKoalas = winnerCheck(65, 54, 49);
+
+//1. Create an arrow function 'calcAverage' to calculate the average of 3 scores
+// 2. Use the function to calculate the average for both teams
+// 3. Create a function 'checkWinner' that takes the average score of each team
+// as parameters ('avgDolhins' and 'avgKoalas'), and then logs the winner
+// to the console, together with the victory points, according to the rule above.
+// Example: "Koalas win (30 vs. 13)"
+// 4. Use the 'checkWinner' function to determine the winner for both Data 1 and
+// Data 2
+// 5. Ignore draws
+
+// Hints:
+// § To calculate average of 3 values, add them all together and divide by 3
+// § To check if number A is at least double number B, check for A >= 2 * B.
+// Apply this to the team's average scores 😉
+
+// //test 1
+// const calcAverage = (a, b, c) => (a + b + c) / 3;
+
+// //test 2
+// const scoreDolphins = (44, 23, 71);
+// const scoreKoalas = (65, 54, 49);
+
+//review arrow function !
+// budi lahir tahun 1995
+// berapa lama budi pensiun ?
+// pakailah tahun sekarang!
+
+const rumus = (birthYear) => 2023 - birthYear;
+const calcAge = rumus(2023);
+
+console.log(calcAge);
