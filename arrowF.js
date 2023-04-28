@@ -280,6 +280,24 @@
 // pakailah tahun sekarang!
 
 const rumus = (birthYear) => 2023 - birthYear;
-const calcAge = rumus(2023);
+const calcAge = rumus(1997);
 
 console.log(calcAge);
+
+// ber punya motor 10
+// ber kecolongan nih 3 motor
+// sisa berapa motor si ber ?
+
+const rumusMotorIlang = (motorYangDiPunya) => 10 - motorYangDiPunya;
+const CalcBike = rumusMotorIlang(5);
+const totalMotorBer = 5;
+
+console.log(CalcBike, totalMotorBer);
+
+// di kebun binatang tadinya ada 5 macan
+// trus mati 3 tuh dia
+// sisa berapa macan yang dipunya ?
+
+const rumusMacanIlang = (macanYangDipunya) => 3 - macanYangDipunya;
+const caclTheTiger = rumusMacanIlang(5);
+console.log(caclTheTiger);
