@@ -252,85 +252,69 @@
 // checkWinner(576, 111);
 
 // >>>>>DECLARATION<<<<<
-const calcAverage = (a, b, c) => (a + b + c) / 3;
+// const calcAverage = (a, b, c) => (a + b + c) / 3;
 
-let scoreDolphins = calcAverage(500, 100, 71);
-let scoreKoalas = calcAverage(20, 54, 49);
-let hasil = "";
+// let scoreDolphins = calcAverage(500, 100, 71);
+// let scoreKoalas = calcAverage(20, 54, 49);
+// let hasil = "";
 
-function checkWinner(avgDolphins, avgKoalas) {
-  console.log(avgDolphins, avgKoalas);
+// function checkWinner(avgDolphins, avgKoalas) {
+//   console.log(avgDolphins, avgKoalas);
 
-  if (avgDolphins >= 2 * avgKoalas) {
-    return `Dolphins win 🏆 ${avgDolphins} vs. ${avgKoalas}`;
-  } else if (avgKoalas >= 2 * avgDolphins) {
-    return `Koalas win 🏆 ${avgKoalas} vs. ${avgDolphins}`;
-  } else {
-    hasil = "draw";
-  }
-  return hasil;
-}
-checkWinner(scoreDolphins, scoreKoalas);
-console.log(checkWinner(scoreDolphins, scoreKoalas));
+//   if (avgDolphins >= 2 * avgKoalas) {
+//     return `Dolphins win 🏆 ${avgDolphins} vs. ${avgKoalas}`;
+//   } else if (avgKoalas >= 2 * avgDolphins) {
+//     return `Koalas win 🏆 ${avgKoalas} vs. ${avgDolphins}`;
+//   } else {
+//     hasil = "draw";
+//   }
+//   return hasil;
+// }
+// checkWinner(scoreDolphins, scoreKoalas);
+// console.log(checkWinner(scoreDolphins, scoreKoalas));
 
 // checkWinner(576, 111);
 
 // 1. Check berat badan kalau berat badan lebih besar dari 65 tipeBadan adalah "Gemuk" kalau kurang dari 65 tipeBadan adalah "Kurus"
 
-let calcBB = "";
+// let calcBB = "";
 
-function beratBadan(bb1) {
-  if (bb1 > 65) {
-    console.log(`gomi GENDUT`);
-  } else if (bb1 <= 65) {
-    console.log(`gomi kurus`);
-  } else {
-    calcBB = `NONE`;
-  }
-  return calcBB;
-}
-beratBadan(66);
+// function beratBadan(bb1) {
+//   if (bb1 > 65) {
+//     console.log(`gomi GENDUT`);
+//   } else if (bb1 <= 65) {
+//     console.log(`gomi kurus`);
+//   } else {
+//     calcBB = `NONE`;
+//   }
+//   return calcBB;
+// }
+// beratBadan(66);
 
 // const judul = (iniParameter) => 10 + iniParameter;
 // const theMachineOfArrawFunction = judul(20);
 // console.log(theMachineOfArrawFunction);
 
-//>>>>>ANSWER!<<<<<<
-// const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
-// const winnerCheck = function (averageDolph, averageKoals) {
-//   if (averageDolph >= 2 * averageKoals) {
-//     console.log(`dolphine menang dengan score ${averageDolph}`);
-//   } else if (averageDolph >= 2 * averageKoals) {
-//     console.log(`koalas menang dengan score ${averageKoals}`);
-//   } else {
-//     console.log(`draw!`);
-//   }
-// };
-
-// const revokeThisScoreOfDolphines = winnerCheck(44, 23, 71);
-// const revokeThisScoreOfKoalas = winnerCheck(65, 54, 49);
-
-//1. Create an arrow function 'calcAverage' to calculate the average of 3 scores
-// 2. Use the function to calculate the average for both teams
-// 3. Create a function 'checkWinner' that takes the average score of each team
-// as parameters ('avgDolhins' and 'avgKoalas'), and then logs the winner
-// to the console, together with the victory points, according to the rule above.
-// Example: "Koalas win (30 vs. 13)"
-// 4. Use the 'checkWinner' function to determine the winner for both Data 1 and
-// Data 2
-// 5. Ignore draws
-
-// Hints:
-// § To calculate average of 3 values, add them all together and divide by 3
-// § To check if number A is at least double number B, check for A >= 2 * B.
-// Apply this to the team's average scores 😉
-
 // //test 1
-// const calcAverage = (a, b, c) => (a + b + c) / 3;
+const calcAverage = (a, b, c) => (a + b + c) / 3;
 
-// //test 2
-// const scoreDolphins = (44, 23, 71);
-// const scoreKoalas = (65, 54, 49);
+let avgDolphins = calcAverage(44, 23, 71);
+let avgKoalas = calcAverage(65, 54, 49);
+
+function checkWinner(avgDolphins, avgKoalas) {
+  console.log(avgDolphins, avgKoalas);
+
+  if (avgDolphins >= 2 * avgKoalas) {
+    return `dolphins wins the thropy`;
+  } else if (avgKoalas >= 2 * avgDolphins) {
+    return `koalas wins the throphy`;
+  } else {
+    return `none`;
+  }
+}
+
+checkWinner(avgDolphins, avgKoalas);
+console.log(checkWinner(avgDolphins, avgKoalas));
 
 //>>>>>>>>>REVIEW FUNCTION ARRROW<<<<<<<<<<<<<!
 // budi lahir tahun 1995
