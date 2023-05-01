@@ -11,3 +11,8 @@ console.log(friends[friends.length - 1]);
 //ganti salah satu nama dari 3 orang tersebut
 friends[2] = `nugi`;
 console.log(friends);
+
+const firstName = `abi`;
+const abi = [firstName, `nubli`, 2023 - 1997, `employee`, friends];
+
+console.log(abi);
