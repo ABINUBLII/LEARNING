@@ -41,18 +41,18 @@
 // 3. apa aja yang dibutuhin parameter, function
 // 4. LOGIC else if
 
-// function calcTip(params) {
-//   if (params < 300) {
-//     console.log(`tipnya kurang dari 300 ${params} `);
-//   } else if (params > 50) {
-//     console.log(`tipnya lebih dari 50 `);
-//   } else {
-//     console.log(`lebih`);
-//   }
-// }
+function calcTip(params) {
+  if (params < 300) {
+    console.log(`tipnya kurang dari 300 ${params} `);
+  } else if (params > 50) {
+    console.log(`tipnya lebih dari 50 `);
+  } else {
+    console.log(`lebih`);
+  }
+}
 
-// const testData = [125 * 0.15];
-// const tips = [calcTip(testData[0])];
+const testData = [125 * 0.15];
+const tips = [calcTip(testData[0])];
 
 // const calcTip = function (bill) {
 //     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
@@ -92,11 +92,11 @@
 // 3. apa aja yang dibutuhin ? function (parameter), (rumusan dari function), variable store buat bills, tips, bonus
 // 4. LOGIC logical operators
 
-const calcTip = function (bill) {
-  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-};
+// const calcTip = function (bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// };
 
-const bills = [125, 555, 44];
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// const bills = [125, 555, 44];
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 
-console.log(bills, tips);
+// console.log(bills, tips);
