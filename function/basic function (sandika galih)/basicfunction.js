@@ -72,3 +72,23 @@ function checkWinner(timDolphine, timKoala) {
 
 checkWinner(timDolphine, timKoala);
 console.log(checkWinner(timDolphine, timKoala));
+
+//Buatlah sebuah function dengan nama "hitungLuasSegitiga" yang menerima dua parameter, yaitu alas dan tinggi, dan mengembalikan nilai luas segitiga.
+
+function hitungLuasSegitiga(alas, tinggi) {
+  return 2 * alas * tinggi;
+}
+
+console.log(hitungLuasSegitiga(2, 2));
+
+//Buatlah sebuah function dengan nama "greeting" yang menerima satu parameter, yaitu nama seseorang, dan mengembalikan kalimat sapaan "Halo, [nama]!".
+
+function greetings(a) {
+  return prompt`halo nama saya`;
+}
+
+const nama1 = `abi`;
+
+const NamaLengkap = greetings(nama1);
+
+console.log(NamaLengkap);
